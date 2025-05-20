@@ -23,33 +23,43 @@ const skills = [
 export default function SkillProgress() {
   return (
     <section className="bg-gray-900 py-2 px-4">
-      <div className="max-w-7xl  grid grid-cols-4 sm:grid-cols-4 md:grid-cols-8 lg:grid-cols-8  gap-10 text-white mx-8 ">
+      <div className="max-w-7xl  grid grid-cols-4 sm:grid-cols-4 md:grid-cols-8 lg:grid-cols-8  gap-10 text-white mx-4 ">
         {skills.map((skill, index) => (
           <div key={index} className="flex flex-col items-center group">
             <div className="relative w-18 h-18 md:w-24 md-h-24 transition-transform duration-500 group-hover:scale-105">
-              <svg className="w-full h-full" viewBox="0 0 36 36">
-                <path
-                  className="text-gray-700"
-                  strokeWidth="3"
-                  fill="none"
-                  stroke="currentColor"
-                  d="M18 2.0845
-                     a 15.9155 15.9155 0 0 1 0 31.831
-                     a 15.9155 15.9155 0 0 1 0 -31.831"
-                />
-                <path
-                  className="text-orange-500 transition-all duration-700 ease-in-out"
-                  strokeWidth="3"
-                  fill="none"
-                  strokeDasharray={`${skill.percent}, 100`}
-                  strokeLinecap="round"
-                  stroke="currentColor"
-                  d="M18 2.0845
-                     a 15.9155 15.9155 0 0 1 0 31.831
-                     a 15.9155 15.9155 0 0 1 0 -31.831"
-                />
-               
-              </svg>
+            <svg className="w-full h-full" viewBox="0 0 36 36">
+  <defs>
+    <linearGradient id="skillGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="30%" stopColor="#FA6E00" />
+      <stop offset="70%" stopColor="#E60026" />
+    </linearGradient>
+  </defs>
+
+  {/* Background circle */}
+  <path
+    className="text-gray-700"
+    strokeWidth="3"
+    fill="none"
+    stroke="currentColor"
+    d="M18 2.0845
+       a 15.9155 15.9155 0 0 1 0 31.831
+       a 15.9155 15.9155 0 0 1 0 -31.831"
+  />
+
+  {/* Foreground gradient skill path */}
+  <path
+    stroke="url(#skillGradient)"
+    strokeWidth="3"
+    fill="none"
+    strokeDasharray={`${skill.percent}, 100`}
+    strokeLinecap="round"
+    d="M18 2.0845
+       a 15.9155 15.9155 0 0 1 0 31.831
+       a 15.9155 15.9155 0 0 1 0 -31.831"
+    className="transition-all duration-700 ease-in-out"
+  />
+</svg>
+
               <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white">
                 {skill.icon}
               </div>
