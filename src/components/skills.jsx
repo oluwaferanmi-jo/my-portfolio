@@ -23,7 +23,7 @@ const skills = [
 export default function SkillProgress() {
   return (
     <section className="bg-gray-900 py-2 px-4">
-      <div className="max-w-7xl  grid grid-cols-4 sm:grid-cols-4 md:grid-cols-8 lg:grid-cols-8  gap-10 text-white mx-4 ">
+      <div className="max-w-7xl  grid grid-cols-4 sm:grid-cols-4 md:grid-cols-8 lg:grid-cols-8  gap-6 text-white mx-4 ">
         {skills.map((skill, index) => (
           <div key={index} className="flex flex-col items-center group">
             <div className="relative w-18 h-18 md:w-24 md-h-24 transition-transform duration-500 group-hover:scale-105">

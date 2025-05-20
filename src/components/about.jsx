@@ -1,12 +1,12 @@
 function About() {
   return (
-    <div className="bg-gray-900 py-16 text-white">
+    <div className="bg-gray-900 py-6 text-white">
       <h2 className="text-center text-4xl font-semibold">About Me</h2>
       <p className="text-center text-sm text-gray-400 mt-2 px-2">
         User Interface And User Experience And Also Video Editing
       </p>
 
-      <div className="flex flex-col md:flex-row justify-center items-center mt-12 px-8 md:px-20 gap-12">
+      <div className="flex flex-col md:flex-row justify-center items-center mt-12 px-8 py-0 md:px-20 gap-12">
        {/* Left - Image with circular gradient background */}
 <div className="w-full md:w-[40%] flex justify-center items-center">
   <div className="relative w-70 h-70 md:w-80 md:h-80 lg:w-[22rem] lg:h-[22rem]">
@@ -31,7 +31,7 @@ function About() {
           </p>
 
           <button className="mt-6 bg-orange-500 text-white px-5 py-3 rounded-md shadow-md hover:bg-orange-600 transition duration-300">
-            ⬇️ Download CV
+             Download CV
           </button>
         </div>
       </div>
