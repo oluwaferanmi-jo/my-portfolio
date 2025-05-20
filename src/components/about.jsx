@@ -2,7 +2,7 @@ function About() {
   return (
     <div className="bg-gray-900 py-16 text-white">
       <h2 className="text-center text-4xl font-semibold">About Me</h2>
-      <p className="text-center text-sm text-gray-400 mt-2">
+      <p className="text-center text-sm text-gray-400 mt-2 px-2">
         User Interface And User Experience And Also Video Editing
       </p>
 

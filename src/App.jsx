@@ -12,8 +12,9 @@ function App() {
     <Header/>
     <Hero />
     <Services /> 
-    <About/>
     < SkillProgress/>
+    <About/>
+    
    
    </div>
     
