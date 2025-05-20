@@ -2,6 +2,7 @@ import Header from './components/header.jsx'
 import Hero from './components/hero.jsx'
 import Services from './components/services';
 import About from './components/about.jsx';
+import SkillProgress from './components/skills.jsx';
 function App() {
   
      
@@ -12,6 +13,8 @@ function App() {
     <Hero />
     <Services /> 
     <About/>
+    < SkillProgress/>
+   
    </div>
     
    
