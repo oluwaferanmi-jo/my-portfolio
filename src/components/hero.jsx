@@ -1,9 +1,6 @@
 function Hero() {
   return (
-
-    <section className="w-full bg-gray-900 overflow-x-hidden min-h-[750px] md:min-h-screen flex items-start lg:items-center md:item- mt-8">
-      
-      
+    <section className="w-full bg-gray-900 overflow-x-hidden min-h-[750px] md:min-h-screen flex items-start lg:items-center mt-8">
       <div className="w-full container mt-8 px-4 lg:px-8 flex flex-col lg:flex-row items-center lg:items-start justify-between gap-8">
         
         {/* LEFT: text */}
@@ -47,59 +44,28 @@ function Hero() {
           </div>
         </div>
 
-        
-        <div className="relative flex-shrink-0">
-         
-<div
-  className="
-    absolute
-      top-1/2 left-1/2
-      transform -translate-x-1/2 -translate-y-1/2
-      mt-30
-
-    lg:left-auto lg:right-0 lg:translate-x-0 lg:mt-45
-
-    z-0
-  "
->
-  
-  <div className="relative">
-    
-    <div
-      className="
-        w-64 h-64
-        md:w-80 md:h-80
-        lg:w-100 lg:h-100
-        bg-gradient-to-r from-[#ae1703d2] to-[#9d4d10]
-        rounded-full
-      "
-    ></div>
-
-    
-    <img
-      src="/Elegbede.jpeg"
-      alt="Elegbede Oluwaferanmi"
-      className="
-        absolute
-          top-1/2 left-1/2
-          transform -translate-x-1/2 -translate-y-1/2
-
-        w-60 h-60
-        sm:w-56 sm:h-56
-        md:w-64 md:h-64
-        lg:w-80 lg:h-80
-
-        object-cover
-        rounded-full
-      "
-    />
-  </div>
-</div>
-
-         
+        {/* RIGHT: Image */}
+        <div className="relative flex-shrink-0 w-full lg:w-auto flex justify-center lg:justify-end">
+          <div className="relative mt-8 lg:mt-0">
+            <div className="w-64 h-64 md:w-80 md:h-80 lg:w-[26rem] lg:h-[26rem] bg-gradient-to-r from-[#ae1703d2] to-[#9d4d10] rounded-full"></div>
+            <img
+              src="/Elegbede.jpeg"
+              alt="Elegbede Oluwaferanmi"
+              className="
+                absolute
+                top-1/2 left-1/2
+                transform -translate-x-1/2 -translate-y-1/2
+                w-60 h-60
+                sm:w-56 sm:h-56
+                md:w-64 md:h-64
+                lg:w-80 lg:h-80
+                object-cover rounded-full
+              "
+            />
+          </div>
         </div>
-      </div>
 
+      </div>
     </section>
   );
 }
